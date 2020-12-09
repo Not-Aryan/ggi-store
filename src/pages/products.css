@@ -1,0 +1,168 @@
+.content {
+    font-family: "Sora";
+    padding: 0.5rem calc((95vw - 1000px) / 2);
+    margin: 0 0.6vw;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    padding: 2vh 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 2fr));
+    grid-gap: 2em;
+    margin: 3.5rem auto;
+    margin-bottom: 0;
+    /* width: 65%; */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product:hover {
+    cursor: pointer;
+}
+
+.product img {
+    width: 17vw;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 10, 0.2);
+    /* width: 30%; */
+}
+
+.product:hover .name {
+    color:  #7ec850;
+    transition: all 0.2s ease-in-out; 
+}
+
+
+.product span {
+    height: 2vh;
+}
+
+.product h2 {
+    font-size: 1.6rem;
+}
+
+/* Product Modal */
+
+
+.modal {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	overflow: auto;
+	display: none;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.modal.active {
+	display: flex;
+}
+
+.modal-content {
+    position: relative;
+    top: 7.5vh;
+	background-color: #fff;
+	width: 60%;
+	height: 75%;
+	margin: 2rem;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+	overflow: none;
+}
+
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: 2%;
+	font-size: 3rem;
+	font-weight: bold;
+	padding: 0 0 .75rem;
+	color: rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: .3s;
+}
+
+.modal-close:hover, .modal-close:focus {
+	color: rgba(0,0,0,0.5);
+}
+
+
+.cart-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 2fr));
+}
+
+.cart-info img {
+    position: relative;
+    /* top: 5vh; */
+    width: 25vw;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 10, 0.2);
+}
+
+.words h1 {
+    font-size: 2.75rem;
+}
+
+.words h2 {
+    font-size: 2.75rem;
+}
+
+.words h3 {
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+}
+
+.quan {
+    display: flex;
+}
+
+.quan button {
+    text-align: center;
+    /* padding-right: 1.5vw; */
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    line-height: 3rem;
+    width: 3vw;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.quan h2 {
+    width: 3vw;
+    text-align: center;
+    /* padding: 0 2vw; */
+}
+
+.atc {
+    font-family: 'Sora';
+    font-size: 2.75rem;
+    border-radius: 4px;
+    background: #7ec850;
+    padding: 10px 22px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    /* width: 14vw; */
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    /* padding-bottom: 5vh; */
+}
