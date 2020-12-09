@@ -18,24 +18,24 @@ const Navbar = () => {
 
 
 
-    const UpdateCartNum = () => {
-        if (localStorage.getItem("id") === null) {
-            localStorage.setItem("id", uuidv4())
-        }
-        axios.get('http://localhost:5000/cart', {  
-            params: {
-                user: localStorage.getItem("id")
-            }
-        }).then(res => setNumProducts(res.data.length))
-        .catch(err => {
-            alert("Something is wrong on our side. Please try again later")
-            console.log('Error: ' + err)
-        });
-    }
+    // const UpdateCartNum = () => {
+    //     if (localStorage.getItem("id") === null) {
+    //         localStorage.setItem("id", uuidv4())
+    //     }
+    //     axios.get('http://localhost:5000/cart', {  
+    //         params: {
+    //             user: localStorage.getItem("id")
+    //         }
+    //     }).then(res => setNumProducts(res.data.length))
+    //     .catch(err => {
+    //         alert("Something is wrong on our side. Please try again later")
+    //         console.log('Error: ' + err)
+    //     });
+    // }
 
-    useEffect(() => {
-        UpdateCartNum();
-    });
+    // useEffect(() => {
+    //     UpdateCartNum();
+    // });
 
 
 

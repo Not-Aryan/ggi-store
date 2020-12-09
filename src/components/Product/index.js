@@ -17,31 +17,31 @@ const Product = (props) => {
 
     const [quantity, changeQuantiity] = useState(1);
 
-    const AddProductToCart = () => {
+    // const AddProductToCart = () => {
 
-        if (localStorage.getItem("id") === null) {
-            localStorage.setItem("id", uuidv4())
-        }
+    //     if (localStorage.getItem("id") === null) {
+    //         localStorage.setItem("id", uuidv4())
+    //     }
 
-        const Product = {
-            user: localStorage.getItem("id"),
-            name: props.name,
-            quantity: Number(quantity),
-            price: Number(props.price)
-        }
+    //     const Product = {
+    //         user: localStorage.getItem("id"),
+    //         name: props.name,
+    //         quantity: Number(quantity),
+    //         price: Number(props.price)
+    //     }
 
 
-        axios.post('http://localhost:5000/products', Product)
-            .then(res => console.log(res.data))
-            .catch(err => {
-                alert("Something is wrong on our side. Please try again later")
-                console.log('Error: ' + err)
-            });
+    //     axios.post('http://localhost:5000/products', Product)
+    //         .then(res => console.log(res.data))
+    //         .catch(err => {
+    //             alert("Something is wrong on our side. Please try again later")
+    //             console.log('Error: ' + err)
+    //         });
     
-        cModal();
+    //     cModal();
 
-        window.location.reload();
-    }
+    //     window.location.reload();
+    // }
 
 
     return (
