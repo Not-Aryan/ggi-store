@@ -1,0 +1,58 @@
+.content {
+    font-family: "Sora";
+    padding: 0.5rem calc((95vw - 1000px) / 2);
+    /* margin: 0 0.6vw; */
+}
+
+
+.about-us {
+    padding-top: 3vh;
+    background-color: #8fdc97;
+    color: white;
+}
+
+.about-us h1 {
+    font-size: 3rem;
+}
+
+.about-us h2 {
+    margin-top: 2vh;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-decoration: none;
+    font-weight: 100;
+    padding: 3vh 0;
+}
+
+@media screen and (max-width: 1060px) {
+    .about-us {
+        padding: 3vh 2rem;
+    }
+
+    .about-us h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .page {
+        text-align: center;
+    }
+
+    .about-us {
+        padding: 3vh 2.5rem;
+    }
+
+    .about-us h1 {
+        font-size: 2rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.25rem;
+    }
+}
